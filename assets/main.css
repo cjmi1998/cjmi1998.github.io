@@ -66,10 +66,18 @@ img {
 }
 
 
-a {
-    color: inherit;
-    text-decoration: inherit
+a, a:visited, p a {
+    color: #000000;
+    text-decoration: none !important;
 }
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #FF1D16;
+   
+}
+
+
 
 img {
     display: block;
@@ -135,10 +143,8 @@ html {
     color: #000;
 }
 
-
-footer{
-
-    
+footer p, p.footer{
+    margin-bottom:0;
 }
 
 
@@ -172,11 +178,6 @@ footer{
         grid-column-end: span 6;
     }
 
-
-    .footer p, p.footer{
-        margin-bottom:0;
-    }
-
     .main-div{
         display: flex;
         flex-direction: column;
@@ -186,11 +187,18 @@ footer{
 }
 
 
-
 .underline {
     text-decoration: underline
 }
 
 .d-inline-flex{
     display:inline-flex;
+}
+
+.mb-1{
+    margin-bottom: 0.25rem;
+}
+
+.mb-2{
+    margin-bottom: 0.5rem;
 }
